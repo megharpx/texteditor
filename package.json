@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/megharpx/texteditor/issues"
   },
-  "homepage": "https://github.com/megharpx/texteditor#readme"
+  "homepage": "https://github.com/megharpx/texteditor#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "idb": "^7.1.0",
+    "webpack": "^5.74.0",
+    "workbox-sw": "^6.5.4"
+  }
 }
