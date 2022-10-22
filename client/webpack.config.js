@@ -9,7 +9,7 @@ module.exports = () => {
     entry: {
       main: './src/js/index.js',
       install: './src/js/install.js',
-      //database: './src/js/database.js'
+      database: './src/js/database.js'
     },
     output: {
       filename: '[name].bundle.js',
@@ -49,7 +49,7 @@ module.exports = () => {
     ],
 
     module: {
-      // TODO: Add CSS loaders and babel to webpack.
+      // CSS loaders and babel to webpack.
       rules: [
         {
           test: /\.css$/i,

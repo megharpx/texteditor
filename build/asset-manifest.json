@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/megharpx/texteditor/static/css/main.597de62d.css",
+    "main.js": "/megharpx/texteditor/static/js/main.7efe6567.js",
+    "index.html": "/megharpx/texteditor/index.html",
+    "main.597de62d.css.map": "/megharpx/texteditor/static/css/main.597de62d.css.map",
+    "main.7efe6567.js.map": "/megharpx/texteditor/static/js/main.7efe6567.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.597de62d.css",
+    "static/js/main.7efe6567.js"
+  ]
+}
