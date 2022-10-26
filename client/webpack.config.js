@@ -12,8 +12,27 @@ module.exports = () => {
       install: './src/js/install.js',
       database: './src/js/database.js'
     },
+    module: {
+      // CSS loaders and babel to webpack.
+      rules: [{
+          test: /\.css$/i,
+          use: ['style-loader', 'css-loader'],
+        },
+        {
+          test: /\.m?js$/,
+          exclude: /node_modules/,
+          use: {
+            loader: 'babel-loader',
+            options: {
+              presets: ['@babel/preset-env'],
+              plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime']
+            },
+          },
+        },
+      ],
+    },
     output: {
-      filename: '[name].bundle.js',
+      filename: 'bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
@@ -49,25 +68,6 @@ module.exports = () => {
       }),
     ],
 
-    module: {
-      // CSS loaders and babel to webpack.
-      rules: [
-        {
-          test: /\.css$/i,
-          use: ['style-loader', 'css-loader'],
-        },
-        {
-          test: /\.m?js$/,
-          exclude: /node_modules/,
-          use: {
-            loader: 'babel-loader',
-            options: {
-              presets: ['@babel/preset-env'],
-              plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime']
-            },
-          },
-        },
-      ],
-    },
+    
   };
 };
